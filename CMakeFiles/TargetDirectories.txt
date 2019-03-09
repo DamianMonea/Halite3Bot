@@ -1,0 +1,3 @@
+/home/damian/Desktop/CURSURI/PA/PROIECT/CMakeFiles/rebuild_cache.dir
+/home/damian/Desktop/CURSURI/PA/PROIECT/CMakeFiles/MyBot.dir
+/home/damian/Desktop/CURSURI/PA/PROIECT/CMakeFiles/edit_cache.dir
