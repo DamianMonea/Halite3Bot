@@ -15,23 +15,19 @@ using std::string;
 #define TRAIN_SIZE 60000
 
 int main() {
-    ofstream content;
-    char plotter[] = "util.py";    
-    string trainSetName = "mnist_train.csv";
+    // char plotter[] = "util.py";    
+    // string trainSetName = "mnist_train.csv";
 
-    CSVReader *reader = new CSVReader(trainSetName);
-    MNISTDigit *test, *train;
-    train = new MNISTDigit[TRAIN_SIZE];
-    reader->readCSV(train, TRAIN_SIZE);
-    char *digitPlot = new char[30];
-    strcpy(digitPlot, "python util.py DISPLAY_DIGIT");
+    // CSVReader *reader = new CSVReader(trainSetName);
+    // MNISTDigit *test, *train;
+    // train = new MNISTDigit[TRAIN_SIZE];
+    // reader->readCSV(train, TRAIN_SIZE);
+    // char *digitPlot = new char[30];
+    // strcpy(digitPlot, "python util.py DISPLAY_DIGIT");
 
-    NeuralNetwork *model = new NeuralNetwork(4);
-    model->addLayer(Dense(784));
-    model->addLayer(Dense(100));
-    model->addLayer(Dense(10));
-    model->addLayer(Dense(10));
-    model->build();
+    // NeuralNetwork *model = new NeuralNetwork(4);
+    // model->addLayer(784);
+    // model->build();
     // model->testAll();
     // model->train();
 
@@ -57,5 +53,16 @@ int main() {
     //     }
     // }    
     
+    NeuralNetwork *model = new NeuralNetwork(4);
+    model->addLayer(9408);
+    model->build();
+
+    delete model;
+
+    // delete[] digitPlot;
+    // delete reader;
+    // delete test;
+    // delete train;
+
     return 0;
 }

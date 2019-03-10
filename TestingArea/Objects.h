@@ -38,6 +38,10 @@ public:
         values = new int[785];
     }
 
+    ~MNISTDigit() {
+        delete[] values;
+    }
+
     int getLabel() {
         return label;
     }
